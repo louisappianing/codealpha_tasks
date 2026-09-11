@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Gallery Profile</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body class="container">
+    <header>
+    <nav class="navbar">
+        <div class="nav-container">
+            <h1 class="logo">Luei</h1>
+            <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu" aria-expanded="false">&#9776;</button>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about-me">About Me</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#project">Project</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    </header>
+    <main id="home">
+        <div class="intro-container">
+            <div class="intro">
+                <h1 id="name"><span>Hello, I'm</span> <br>Louis Appianing</h1>
+                <p id="intro">Frontend Developer| <br>Aspiring Cybersecurity Enthusiast</p>
+            
+                <div class="social-icons">
+                    <a href="https://web.facebook.com/profile.php?id=61594382456712" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://x.com/Louis_Appianing" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="https://linkedin.com/in/louis-appianing-8a531b37b?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/louisappianing" target="_blank"><i class="fa-brands fa-github"></i></a>
+            </div>
+            </div>
+            <div>
+                <img src="profile.png" alt="This is a picture of Louis" width="200px" height="200px" id="profile">
+            </div>
+        </div>
+        <hr>
+        <section class="about-me" id="about-me">
+            <h2>About Me</h2>
+            
+            <p>I'm passionate about building and securing clean, responsive and user-friendly web experiences. I enjoy turning ideas into real, functional and beautiful secured websites.
+               I'm currently on a journey to grow my skills, gain real-world experience and becoming a skilled developer and cyber security personel in the tech industry.<br><br>
+               In 5 years time, I see myself growing, continuing to learn and leading exciting projects in Web dev and Cybersecurity, that make impact and bring real value.
+            </p>
+        </section>
+        <section class="skills-card" id="skills">
+            <div>
+                <h3>Skills</h3>
+            </div>
+            <div class="skills-list">
+                <div class="set1">
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>Python</li>
+                        <li>JavaScript</li>
+                        <li>Kali Linux</li>
+                    </ul>
+                </div>
+                <div class="set2">
+                    <ul>
+                        <li></li>
+                        <li>CapCut</li>
+                        <li>Photoshop</li>
+                        <li>AI Automation</li>
+                        <li>Microsoft Office Suite</li>
+                        <li>Communication</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="project-card" id="project">
+            <div class="project">
+                <h3>Projects</h3>
+                <div class="all-projects">
+                    <div class="calculator">
+                        <h4>Calculator</h4>
+                        <p>A simple and responsive calculator
+                           built with HTMl, CSS and Javascript.
+                        </p>
+                        <a href="projects/Calculator/calculator.html" target="_self" class="view-project">view project ></a>
+                    </div>
+
+                    <div class="image-gallery">
+                        <h4>Image Gallery</h4>
+                        <p>An image gallery with
+                           lightbox and smooth trasitions.
+                        </p>
+                        <a href="projects/Image Gallery/image-gallery.html" target="_self" class="view-project">view project ></a>
+                    </div>
+
+                    <div class="porfolio">
+                        <h4>Portfolio Website</h4>
+                        <p> A personal porfolio website to
+                            showcase my skills and projects.</p>
+                        <a href="portfolio.html" class="view-project">view project ></a>
+                    </div>
+
+                    <div class="qiz-app">
+                        <h4>Louis Quiz App</h4>
+                        <p> A capital cities quiz app built with python
+                            featuring multiple choice, timer, grading system
+                            and replay feature</p>
+                        <a href="https://github.com/louisappianing/Louis-Quiz-App.git" class="view-project">view project ></a>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <section class="contact-card" id="contact">
+            <h3>Contact</h3>
+             <div class="contact">
+                <div class="contact-list">
+                <p><i class="fa-solid fa-phone"></i> <a href="+233548621296">+233 548621296</a> </p>
+                <p><i class="fa-solid fa-location-dot"></i> Kumasi, Ghana</p>
+                <p><i class="fa-solid fa-envelope"></i> <a href="mailto:louisappianing1@gmail.com"> louisappianing1@gmail.com</a></p>
+                <p><i class="fa-brands fa-linkedin"></i><a href="https://www.linkedin.com/" target="_blank"> linkedin.com/in/louisappining</a></p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <p id="footer">&copy; 2026 Louis Appianing. All rights reserved.
+    </footer>
+
+    <script>
+        const hamburger = document.getElementById('hamburger');
+        const navMenu = document.getElementById('nav-menu');
+
+        hamburger.addEventListener('click', () => {
+            const isOpen = navMenu.classList.toggle('active');
+            hamburger.setAttribute('aria-expanded', isOpen);
+        });
+
+        navMenu.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                navMenu.classList.remove('active');
+                hamburger.setAttribute('aria-expanded', 'false');
+            });
+        });
+    </script>
+</body>
+</html>
