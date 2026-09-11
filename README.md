@@ -1,4 +1,3 @@
-# codealpha_tasks
 CodeAlpha Internship Tasks
 
 This repository contains the tasks completed during the CodeAlpha Web Development Internship (August 2026 batch).
@@ -38,12 +37,11 @@ Tech Stack
 - CSS3
 - JavaScript
 
-About
+## About
 These projects were completed as part of my internship tasks with **CodeAlpha**.
 
-Author
-Louis Appianing
+## Author
+**Louis Appianing**
 📍 Kumasi, Ghana
 📧 louisappianing@gmail.com
-LinkedIn (https://www.linkedin.com/in/louis-appianing-8a531b37b) 
-GitHub (https://github.com/louisappianing)
+🔗 [LinkedIn](https://www.linkedin.com/in/louis-appianing-8a531b37b) | [GitHub](https://github.com/louisappianing)
